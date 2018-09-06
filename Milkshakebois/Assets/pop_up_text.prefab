@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085937778087698}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -107,10 +107,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35a2b67b0bb50a41a004455c2541f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touching: 0
-  text: 
-  active: 0
-  heightFromPlayer: 2
-  scale: 2
-  textOffset: 1.5
-  textBox: {fileID: 4069139355930362, guid: 4d82eea8012edda47ad56eab798360a7, type: 2}
+  touching: 1
+  text: 'That can I; At least, the whisper goes so. Our last king, Whose image even
+    but now appear''d to us, Was, as you know, by Fortinbras of Norway, Thereto prick''d
+    on by a most emulate pride, Dared to the combat; in which our valiant Hamlet--
+    For so this side of our known world esteem''d him--Did slay this Fortinbras; who
+    by a seal''d compact, Well ratified by law and heraldry, Did forfeit, with his
+    life, all those his lands Which he stood seized of, to the conqueror: Against
+    the which, a moiety competent Was gaged by our king; which had return''d To the
+    inheritance of Fortinbras, Had he been vanquisher; as, by the same covenant, And
+    carriage of the article design''d, His fell to Hamlet. Now, sir, young Fortinbras,
+    Of unimproved mettle hot and full, Hath in the skirts of Norway here and there
+    Shark''d up a list of lawless resolutes, For food and diet, to some enterprise
+    That hath a stomach in''t; which is no other-- As it doth well appear unto our
+    state-- But to recover of us, by strong hand And terms compulsatory, those foresaid
+    lands So by his father lost: and this, I take it, Is the main motive of our preparations,
+    The source of this our watch and the chief head Of this post-haste and romage
+    in the land.'
+  active: 1
+  box: {fileID: 0}
+  x: 390
+  y: 98
+  letterPause: 0.05
