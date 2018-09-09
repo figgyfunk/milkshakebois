@@ -41,11 +41,15 @@ public class interact : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-		if(touching && Input.GetKeyDown(KeyCode.E))
+		if(touching)
         {
-            box.GetComponent<MeshRenderer>().enabled = true;
-            active = true;
-            StartCoroutine(revealText());
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                box.GetComponent<MeshRenderer>().enabled = true;
+                active = true;
+                StartCoroutine(revealText());
+            }
+            
         }
 
 	}
