@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class doorWay : MonoBehaviour {
 
@@ -11,22 +12,32 @@ public class doorWay : MonoBehaviour {
     private bool fadeOut = false;
     private GameObject player;
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         active = true;
         player = other.gameObject;
+        Debug.Log(player.gameObject.name);
     }
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit2D(Collider2D other)
     {
         active = false;
         player = null;
     }
-
+    private void OnGUI()
+    {
+        if (active)
+        {
+            GUI.Label(new Rect(gameObject.transform.position.x+150f, gameObject.transform.position.y + 100f, 150f, 50f), "Press E to go home for the day.");
+        }
+    }
     public void Start()
     {
         fade.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 0f);
     }
 
+   
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && active)

@@ -5,28 +5,36 @@ using UnityEngine;
 
 public class interact : MonoBehaviour {
     public bool touching = false;
-    public string text = "";
+    public string first = "";
+    public string response = "";
+    private string text;
     public bool active = false;
     public GameObject box;
     public float x;
     public float y;
     public float letterPause = .2f;
     private string printText = "";
+    private bool typingDone = false;
     // Use this for initialization
     public void Start()
     {
         box.GetComponent<MeshRenderer>().enabled = false;
+        text = first;
     }
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         touching = true;
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         touching = false;
         box.GetComponent<MeshRenderer>().enabled = false;
         GUI.enabled = false;
         active = false;
+        printText = "";
+        typingDone = false;
+        text = first;
     }
     void OnGUI()
     {
@@ -45,9 +53,19 @@ public class interact : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                box.GetComponent<MeshRenderer>().enabled = true;
-                active = true;
-                StartCoroutine(revealText());
+                if (typingDone == false)
+                {
+                    box.GetComponent<MeshRenderer>().enabled = true;
+                    active = true;
+                    StartCoroutine(revealText());
+                }
+                else
+                {
+                    printText = "";
+                    text = response;
+                    StartCoroutine(revealText());
+                }
+                
             }
             
         }
@@ -59,6 +77,10 @@ public class interact : MonoBehaviour {
         foreach(char letter in text.ToCharArray())
         {
             printText += letter;
+            if(printText.Length == text.Length)
+            {
+                typingDone = true;
+            }
             yield return new WaitForSeconds(letterPause);
         }
         
