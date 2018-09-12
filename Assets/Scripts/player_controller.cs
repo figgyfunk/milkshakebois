@@ -12,8 +12,10 @@ public class player_controller : MonoBehaviour {
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer currImage;
 
-	// Use this for initialization
-	void Start () {
+    private bool incorporeal = false;
+
+    // Use this for initialization
+    void Start () {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         currImage = spriteObject.GetComponent<SpriteRenderer>();
     }
@@ -32,10 +34,24 @@ public class player_controller : MonoBehaviour {
         if (Input.GetKey(KeyCode.X))
         {
             currImage.sprite = outline;
+            incorporeal = true;
         }
         if (Input.GetKeyUp(KeyCode.X))
         {
             currImage.sprite = main_cube;
+            incorporeal = false;
+        }
+    }
+
+    public bool Incorporeal
+    {
+        get
+        {
+            return incorporeal;
+        }
+        set
+        {
+            incorporeal = value;
         }
     }
 
