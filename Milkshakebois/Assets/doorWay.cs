@@ -11,6 +11,7 @@ public class doorWay : MonoBehaviour {
     private bool fadeIn = false;
     private bool fadeOut = false;
     private GameObject player;
+    public GameObject box;
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -18,28 +19,33 @@ public class doorWay : MonoBehaviour {
         active = true;
         player = other.gameObject;
         Debug.Log(player.gameObject.name);
+        box.GetComponent<MeshRenderer>().enabled = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         active = false;
         player = null;
+        box.GetComponent<MeshRenderer>().enabled = false;
     }
     private void OnGUI()
     {
         if (active)
         {
-            GUI.Label(new Rect(gameObject.transform.position.x+150f, gameObject.transform.position.y + 100f, 150f, 50f), "Press E to go home for the day.");
+            GUI.Label(new Rect(160f, 2f, 150, 100), "Press E to go home for the day.");
         }
     }
     public void Start()
     {
         fade.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 0f);
+        box.GetComponent<MeshRenderer>().enabled = false;
+
     }
 
    
     public void Update()
     {
+
         if(Input.GetKeyDown(KeyCode.E) && active)
         {
             
