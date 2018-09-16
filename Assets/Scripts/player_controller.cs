@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class player_controller : MonoBehaviour {
@@ -9,8 +10,10 @@ public class player_controller : MonoBehaviour {
     public Sprite main_cube;
     public Sprite outline;
     public GameObject spriteObject;
+    public Text scoreText;
     private Rigidbody2D m_Rigidbody;
     private SpriteRenderer currImage;
+    private int score = 0;
 
     private bool incorporeal = false;
 
@@ -18,6 +21,11 @@ public class player_controller : MonoBehaviour {
     void Start () {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         currImage = spriteObject.GetComponent<SpriteRenderer>();
+        GameObject tempObject = GameObject.Find("Score");
+        if(tempObject != null)
+        {
+            scoreText = tempObject.GetComponent<Text>();
+        }
     }
 	
 	// Update is called once per frame
@@ -28,8 +36,12 @@ public class player_controller : MonoBehaviour {
         if(Input.GetKey("right")) {
             m_Rigidbody.velocity = transform.right * speed + new Vector3(0, m_Rigidbody.velocity.y, 0);
         }
-        if(Input.GetKeyDown("up")){
+        if(Input.GetKeyDown("up") && m_Rigidbody.velocity.y == 0){
             m_Rigidbody.velocity = transform.up * jumpheight;
+        }
+        if(!Input.GetKey("left") && !Input.GetKey("right") && !Input.GetKey("up"))
+        {
+            m_Rigidbody.velocity = new Vector3(0, m_Rigidbody.velocity.y, 0);
         }
         if (Input.GetKey(KeyCode.X))
         {
@@ -40,6 +52,24 @@ public class player_controller : MonoBehaviour {
         {
             currImage.sprite = main_cube;
             incorporeal = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Floor" && collision.contacts[0].normal.x == 0.0)
+        {
+            transform.parent = collision.transform;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Collectable")
+        {
+            score++;
+            scoreText.text = score.ToString();
+            Destroy(collision.gameObject);
         }
     }
 
