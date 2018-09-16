@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 61077607985572878}
   m_Layer: 0
   m_Name: PlatSolid
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 114346352802443794}
   m_Layer: 0
   m_Name: PlatPhase
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 114956911148274266}
   m_Layer: 0
   m_Name: PlatPhase (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1761,7 +1761,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288784086584044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.974655, y: -5.7715807, z: 0.2045387}
+  m_LocalPosition: {x: -14.97, y: -5.7715807, z: 0.2045387}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4787124413513228}
@@ -2437,7 +2437,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1645970215132376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.75141346, y: 11.862185, z: -0.2045387}
+  m_LocalPosition: {x: -4.7467704, y: 6.2462306, z: 51.758236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4269964043417956}
