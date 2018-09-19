@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Collectable
+  - Respawn Node
   layers:
   - Default
   - TransparentFX
