@@ -10,6 +10,7 @@ public class boss_controller : MonoBehaviour {
     public GameObject bullet;
     private int jump_switch = 0;
     private int shoot_switch = 0;
+    private float shoot_timer = 0;
     private Rigidbody2D m_Rigidbody;
 
     // Use this for initialization
@@ -35,11 +36,18 @@ public class boss_controller : MonoBehaviour {
         }
 
         shoot_switch = Random.Range(0, 100);
-        if(shoot_switch == 0)
+        if(shoot_switch == 0 && shoot_timer <= 0)
         {
-            GameObject bulletClone = Instantiate(bullet,transform.position,Quaternion.identity,gameObject.transform);
+            Vector3 bulletpos = transform.position;
+            bulletpos.x = bulletpos.x + 4f;
+            GameObject bulletClone = Instantiate(bullet,bulletpos,Quaternion.identity,gameObject.transform);
             Rigidbody2D cloneBody = bulletClone.GetComponent<Rigidbody2D>();
             cloneBody.velocity = -transform.right * bullet_speed;
+            shoot_timer += 3;
+        }
+        if(shoot_timer > 0)
+        {
+            shoot_timer -= Time.deltaTime;
         }
 	}
 

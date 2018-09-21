@@ -61,6 +61,14 @@ public class player_controller : MonoBehaviour {
         {
             transform.parent = collision.transform;
         }
+        if(collision.gameObject.tag == "Bullet")
+        {
+            gameover();
+        }
+        if(collision.gameObject.tag == "Boss")
+        {
+            gameover();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -83,6 +91,12 @@ public class player_controller : MonoBehaviour {
         {
             incorporeal = value;
         }
+    }
+
+    public void gameover()
+    {
+        Camera.main.transform.parent = null;
+        Destroy(gameObject);
     }
 
 }
