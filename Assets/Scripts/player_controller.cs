@@ -55,6 +55,7 @@ public class player_controller : MonoBehaviour {
         }
     }
 
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Floor" && collision.contacts[0].normal.x == 0.0)
@@ -69,6 +70,20 @@ public class player_controller : MonoBehaviour {
         {
             gameover();
         }
+    }
+    */
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Floor" && collision.contacts[0].normal.x == 0.0)
+        {
+            transform.parent = collision.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        transform.parent = null;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

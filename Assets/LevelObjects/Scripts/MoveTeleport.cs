@@ -6,6 +6,7 @@ public class MoveTeleport : MonoBehaviour {
 
     public Vector3 destOffset;
     public float travelTime;
+    public float start_percent;
 
     private Vector3 startLoc;
     private Vector3 endLoc;
@@ -16,7 +17,7 @@ public class MoveTeleport : MonoBehaviour {
     {
         startLoc = transform.position;
         endLoc = startLoc + destOffset;
-        timer = 0;
+        timer = start_percent * travelTime;
     }
 	
 	// Update is called once per frame
