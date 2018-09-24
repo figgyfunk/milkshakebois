@@ -1,0 +1,15 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ColliderDeath : MonoBehaviour {
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.name.Equals("Player"))
+        {
+            //insert death code here
+            collision.gameObject.transform.position = collision.gameObject.GetComponent<SetSpawnPoint>().respawn_node.transform.position;
+        }
+    }
+}
