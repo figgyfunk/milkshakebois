@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -651,7 +651,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 30337530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 141.23373, y: -4.2067814, z: 0}
+  m_LocalPosition: {x: 141.8, y: -4.2067814, z: 0}
   m_LocalScale: {x: 1, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1608214002}
@@ -691,8 +691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: -30, y: 0, z: 0}
+  travelTime: 2
   start_percent: 0
 --- !u!114 &30337535
 MonoBehaviour:
@@ -11152,8 +11152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: 12, y: 0, z: 0}
+  travelTime: 1
   start_percent: 0
 --- !u!114 &671510494
 MonoBehaviour:
@@ -12007,8 +12007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25c89d1a005d2a4ebf542d5b70dceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  speed: 0
+  destOffset: {x: 0, y: -3, z: 0}
+  speed: 3
 --- !u!114 &698781154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13555,8 +13555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: -60, y: 0, z: 0}
+  travelTime: 3
   start_percent: 0
 --- !u!114 &789285678
 MonoBehaviour:
@@ -14052,8 +14052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: 12, y: 0, z: 0}
+  travelTime: 1.5
   start_percent: 0
 --- !u!114 &812821766
 MonoBehaviour:
@@ -14906,9 +14906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
-  start_percent: 0
+  destOffset: {x: -60, y: 0, z: 0}
+  travelTime: 3
+  start_percent: 0.75
 --- !u!114 &828864679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25117,8 +25117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: -12, y: 0, z: 0}
+  travelTime: 1
   start_percent: 0
 --- !u!114 &1246493803
 MonoBehaviour:
@@ -25913,8 +25913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: 12, y: 0, z: 0}
+  travelTime: 1.5
   start_percent: 0
 --- !u!114 &1305188770
 MonoBehaviour:
@@ -27683,8 +27683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: -12, y: 0, z: 0}
+  travelTime: 1.5
   start_percent: 0
 --- !u!114 &1383756932
 MonoBehaviour:
@@ -30292,9 +30292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
-  start_percent: 0
+  destOffset: {x: -60, y: 0, z: 0}
+  travelTime: 3
+  start_percent: 0.5
 --- !u!114 &1529127087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32874,8 +32874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25c89d1a005d2a4ebf542d5b70dceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  speed: 0
+  destOffset: {x: 0, y: 3, z: 0}
+  speed: 3
 --- !u!114 &1620858480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34861,8 +34861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
+  destOffset: {x: -12, y: 0, z: 0}
+  travelTime: 1.5
   start_percent: 0
 --- !u!114 &1752444805
 MonoBehaviour:
@@ -36139,8 +36139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25c89d1a005d2a4ebf542d5b70dceb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  speed: 0
+  destOffset: {x: 0, y: -5, z: 0}
+  speed: 3
 --- !u!114 &1809856906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40522,9 +40522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74090c827a6345743bf3d44dc1ae0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destOffset: {x: 0, y: 0, z: 0}
-  travelTime: 0
-  start_percent: 0
+  destOffset: {x: -60, y: 0, z: 0}
+  travelTime: 3
+  start_percent: 0.25
 --- !u!114 &2062310402
 MonoBehaviour:
   m_ObjectHideFlags: 0
