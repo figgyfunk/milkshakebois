@@ -183,6 +183,11 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 255115521}
+    - target: {fileID: 23960484976562806, guid: ffb88d00ecb08114f92191295b42d9af,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb88d00ecb08114f92191295b42d9af, type: 2}
   m_IsPrefabAsset: 0
@@ -539,6 +544,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412784525611906, guid: bcac8e02066464249927daacf6cc51a0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcac8e02066464249927daacf6cc51a0, type: 2}
