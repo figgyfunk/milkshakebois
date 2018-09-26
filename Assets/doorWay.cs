@@ -33,7 +33,7 @@ public class doorWay : MonoBehaviour {
     {
         if (active)
         {
-            GUI.Label(new Rect(300f, 2f, 300, 100), doorText);
+            GUI.Label(new Rect(400f, 30f, 300, 100), doorText);
    
         }
     }
