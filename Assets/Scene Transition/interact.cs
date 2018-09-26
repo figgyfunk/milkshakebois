@@ -12,7 +12,7 @@ public class interact : MonoBehaviour {
     public GameObject box;
     public float x;
     public float y;
-    public float letterPause = .2f;
+    private float letterPause = .1f;
     private string printText = "";
     private bool typingDone = false;
     // Use this for initialization
@@ -41,7 +41,7 @@ public class interact : MonoBehaviour {
         if(active)
         {
             GUI.enabled = true;
-            GUI.Label(new Rect(160f, 2f, x, y), printText);
+            GUI.Label(new Rect(300f, 2f, 300, 100), printText);
          
         }
         

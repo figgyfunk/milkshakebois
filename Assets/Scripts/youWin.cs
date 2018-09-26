@@ -10,15 +10,11 @@ public class youWin : MonoBehaviour {
     public int fontSize = 100;
 	// Use this for initialization
 	void Start () {
-        active = false;
+        active = true;
         style = new GUIStyle();
         style.fontSize = fontSize;
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        active = true;
-    }
 
     private void OnGUI()
     {
