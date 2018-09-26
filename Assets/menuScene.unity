@@ -367,9 +367,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Just a few more coins left!
 
-    Move and Jump with arrow keys.
+    Move and Jump with arrow keys
 
-    Press X to phase.'
+    Press X to phase
+
+    Press E to interact'
 --- !u!222 &537767972
 CanvasRenderer:
   m_ObjectHideFlags: 0
