@@ -10,7 +10,7 @@ public class youWin : MonoBehaviour {
     public int fontSize = 100;
 	// Use this for initialization
 	void Start () {
-        active = true;
+        active = false;
         style = new GUIStyle();
         style.fontSize = fontSize;
 	}

@@ -18,7 +18,7 @@ public class doorWay : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other)
     {
         active = true;
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         Debug.Log(player.gameObject.name);
         box.GetComponent<MeshRenderer>().enabled = true;
     }

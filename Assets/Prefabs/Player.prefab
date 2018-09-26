@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567334809690802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7999997, z: -20}
+  m_LocalPosition: {x: 0, y: 5, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4756039969132560}
@@ -213,6 +213,11 @@ MonoBehaviour:
   outline: {fileID: 21300000, guid: d7f314c2e6d3f7c49acf7bf1ea04eb41, type: 3}
   spriteObject: {fileID: 1662161456226454}
   scoreText: {fileID: 0}
+  phase_in_sound: {fileID: 0}
+  phase_out_sound: {fileID: 0}
+  land_sound: {fileID: 0}
+  jump_sound: {fileID: 0}
+  grab_sound: {fileID: 0}
 --- !u!124 &124299722877076268
 Behaviour:
   m_ObjectHideFlags: 1

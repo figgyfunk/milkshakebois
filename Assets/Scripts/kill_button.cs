@@ -5,11 +5,13 @@ using UnityEngine;
 public class kill_button : MonoBehaviour {
 
     public GameObject floor;
+    private youWin wintext;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        wintext = GetComponent<youWin>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,6 +23,7 @@ public class kill_button : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             Destroy(floor);
+            wintext.active = true;
         }
     }
 }

@@ -9,7 +9,7 @@ public class PhaseControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player_controller = GameObject.Find("Player").GetComponent<player_controller>();
+        player_controller = GameObject.FindGameObjectWithTag("Player").GetComponent<player_controller>();
         col = GetComponent<Collider2D>();
     }
 	

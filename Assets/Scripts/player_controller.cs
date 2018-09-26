@@ -15,6 +15,14 @@ public class player_controller : MonoBehaviour {
     private SpriteRenderer currImage;
     private int score = 0;
 
+    public AudioClip phase_in_sound;
+    public AudioClip phase_out_sound;
+    public AudioClip land_sound;
+    public AudioClip jump_sound;
+    public AudioClip grab_sound;
+    private float vol = 1.0f;
+    private AudioSource source;
+
     private bool incorporeal = false;
 
     // Use this for initialization
@@ -26,6 +34,8 @@ public class player_controller : MonoBehaviour {
         {
             scoreText = tempObject.GetComponent<Text>();
         }
+
+        source = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -38,6 +48,8 @@ public class player_controller : MonoBehaviour {
         }
         if(Input.GetKeyDown("up") && m_Rigidbody.velocity.y == 0){
             m_Rigidbody.velocity = transform.up * jumpheight;
+
+            source.PlayOneShot(jump_sound, vol);
         }
         if(!Input.GetKey("left") && !Input.GetKey("right") && !Input.GetKey("up"))
         {
@@ -52,6 +64,12 @@ public class player_controller : MonoBehaviour {
         {
             currImage.sprite = main_cube;
             incorporeal = false;
+
+            source.PlayOneShot(phase_in_sound, vol);
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            source.PlayOneShot(phase_out_sound, vol);
         }
     }
 
@@ -73,6 +91,15 @@ public class player_controller : MonoBehaviour {
     }
     */
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+
+            source.PlayOneShot(land_sound, vol);
+        }
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" && collision.contacts[0].normal.x == 0.0)
@@ -93,6 +120,8 @@ public class player_controller : MonoBehaviour {
             score++;
             scoreText.text = score.ToString();
             Destroy(collision.gameObject);
+            
+            source.PlayOneShot(grab_sound, vol);
         }
     }
 
