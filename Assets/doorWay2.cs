@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class doorWay : MonoBehaviour {
+public class doorWay2 : MonoBehaviour {
 
-    public GameObject otherDoorWay;
+	public string nextLevel;
 	public string doorText;
     public bool active = false;
     public GameObject fade;
@@ -66,8 +67,7 @@ public class doorWay : MonoBehaviour {
 
             else
             {
-                player.transform.parent = null;
-                player.transform.position = otherDoorWay.transform.position;
+                SceneManager.LoadScene(nextLevel);
                 fadeIn = false;
                 fadeOut = true;
             }

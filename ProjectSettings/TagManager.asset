@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Respawn Node
   - BossDeath
+  - BulletFade
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Boss
+  - Bullet
   - 
   - 
   - 

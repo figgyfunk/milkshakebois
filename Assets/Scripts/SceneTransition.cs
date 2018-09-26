@@ -22,7 +22,6 @@ public class SceneTransition : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        print(SceneManager.GetActiveScene().name);
         if(collision.gameObject.tag == "Player" && SceneManager.GetActiveScene().name == "ChallengeTest")
         {
             SceneManager.LoadScene("Boss_Scene");

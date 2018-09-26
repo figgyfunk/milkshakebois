@@ -24,7 +24,6 @@ public class boss_controller : MonoBehaviour {
         {
             m_Rigidbody.velocity = transform.up * jump_height;
             jump_switch =  Random.Range(0, 2);
-            print(jump_switch);
             if(jump_switch == 0)
             {
                 m_Rigidbody.velocity = -transform.right * speed + new Vector3(0, m_Rigidbody.velocity.y, 0);
@@ -38,9 +37,7 @@ public class boss_controller : MonoBehaviour {
         shoot_switch = Random.Range(0, 100);
         if(shoot_switch == 0 && shoot_timer <= 0)
         {
-            Vector3 bulletpos = transform.position;
-            bulletpos.x = bulletpos.x + 4f;
-            GameObject bulletClone = Instantiate(bullet,bulletpos,Quaternion.identity,gameObject.transform);
+            GameObject bulletClone = Instantiate(bullet,transform.position + transform.forward * 4,Quaternion.identity,gameObject.transform);
             Rigidbody2D cloneBody = bulletClone.GetComponent<Rigidbody2D>();
             cloneBody.velocity = -transform.right * bullet_speed;
             shoot_timer += 3;
