@@ -972,7 +972,7 @@ MonoBehaviour:
   doorText: Press E to go to level 2
   active: 0
   fade: {fileID: 1615434027}
-  box: {fileID: 1769039633}
+  box: {fileID: 1400382543}
 --- !u!23 &38700610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10984,6 +10984,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671510491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &673134474
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 717283651}
+    m_Modifications:
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae256caae575e9148986424c276b62d7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &676496377
 GameObject:
   m_ObjectHideFlags: 0
@@ -12329,6 +12371,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 707756089}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &717283651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4572341480107096, guid: 76076dd3f3a7f7a4f98f233df92fcc8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1079290971}
 --- !u!1 &724189708
 GameObject:
   m_ObjectHideFlags: 0
@@ -15448,7 +15495,7 @@ Prefab:
         type: 2}
       propertyPath: box
       value: 
-      objectReference: {fileID: 1769039633}
+      objectReference: {fileID: 1400382543}
     - target: {fileID: 212414725843880470, guid: 6a0761deff4e927488f561bd3d8aacf1,
         type: 2}
       propertyPath: m_Sprite
@@ -18466,7 +18513,7 @@ MonoBehaviour:
   doorText: Press E to challenge the Boss
   active: 0
   fade: {fileID: 1615434027}
-  box: {fileID: 1769039633}
+  box: {fileID: 1400382543}
 --- !u!1 &969242132
 GameObject:
   m_ObjectHideFlags: 0
@@ -20787,7 +20834,7 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4947758580228000, guid: 76076dd3f3a7f7a4f98f233df92fcc8a, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: -70
       objectReference: {fileID: 0}
@@ -22084,7 +22131,7 @@ MonoBehaviour:
   doorText: Press E to go to level 1
   active: 0
   fade: {fileID: 1615434027}
-  box: {fileID: 1769039633}
+  box: {fileID: 1400382543}
 --- !u!23 &1142596670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25590,7 +25637,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1454691531889932, guid: 082a5c98790cba843a1e4a997fe1890c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 082a5c98790cba843a1e4a997fe1890c, type: 2}
@@ -27939,6 +27986,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1400382543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1281695445176530, guid: 76076dd3f3a7f7a4f98f233df92fcc8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1079290971}
 --- !u!1 &1400473388
 GameObject:
   m_ObjectHideFlags: 0
@@ -35255,11 +35307,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1769039633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1281695445176530, guid: 76076dd3f3a7f7a4f98f233df92fcc8a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1079290971}
 --- !u!1 &1769478669
 GameObject:
   m_ObjectHideFlags: 0
@@ -37746,7 +37793,7 @@ MonoBehaviour:
   doorText: Press E to go to level 3
   active: 0
   fade: {fileID: 1615434027}
-  box: {fileID: 1769039633}
+  box: {fileID: 1400382543}
 --- !u!23 &1883301243
 MeshRenderer:
   m_ObjectHideFlags: 0

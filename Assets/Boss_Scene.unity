@@ -970,6 +970,48 @@ MonoBehaviour:
   speed: 1
   bullet_speed: 3
   bullet: {fileID: 1120348736268830, guid: e2d9cdac9453030459be46135512837a, type: 2}
+--- !u!1001 &1275086079
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2097246466}
+    m_Modifications:
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985358107908018, guid: ae256caae575e9148986424c276b62d7, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae256caae575e9148986424c276b62d7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1569984664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 770639995}
+  win_sound: {fileID: 8300000, guid: 67eec04444c15124eb4435e2f313852c, type: 3}
 --- !u!61 &1910824458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1635,6 +1678,11 @@ MonoBehaviour:
   active: 0
   fade: {fileID: 1613215720}
   box: {fileID: 556951655}
+--- !u!4 &2097246466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4572341480107096, guid: 76076dd3f3a7f7a4f98f233df92fcc8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 440975402}
 --- !u!1 &2117642021
 GameObject:
   m_ObjectHideFlags: 0

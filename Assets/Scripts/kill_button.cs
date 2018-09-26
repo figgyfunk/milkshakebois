@@ -5,12 +5,14 @@ using UnityEngine;
 public class kill_button : MonoBehaviour {
 
     public GameObject floor;
+    public AudioClip win_sound;
     private youWin wintext;
+    private AudioSource musicplayer;
 
 	// Use this for initialization
 	void Start () {
         wintext = GetComponent<youWin>();
-
+        musicplayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -24,6 +26,10 @@ public class kill_button : MonoBehaviour {
         {
             Destroy(floor);
             wintext.active = true;
+
+            musicplayer.loop = false;
+            musicplayer.Stop();
+            musicplayer.PlayOneShot(win_sound);
         }
     }
 }
