@@ -3561,7 +3561,7 @@ GameObject:
   - component: {fileID: 203601675}
   m_Layer: 0
   m_Name: PlatSolid (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4589,7 +4589,7 @@ GameObject:
   - component: {fileID: 256561671}
   m_Layer: 0
   m_Name: PlatSolid (12)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5379,7 +5379,7 @@ GameObject:
   - component: {fileID: 278713714}
   m_Layer: 0
   m_Name: PlatSolid (7)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7460,7 +7460,7 @@ GameObject:
   - component: {fileID: 378995596}
   m_Layer: 0
   m_Name: PlatSolid (8)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9784,7 +9784,7 @@ GameObject:
   - component: {fileID: 623068164}
   m_Layer: 0
   m_Name: PlatSolid (16)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11924,7 +11924,7 @@ GameObject:
   - component: {fileID: 694218269}
   m_Layer: 0
   m_Name: PlatSolid (19)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14047,7 +14047,7 @@ GameObject:
   - component: {fileID: 805753203}
   m_Layer: 0
   m_Name: PlatSolid (11)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14759,7 +14759,7 @@ GameObject:
   - component: {fileID: 821461839}
   m_Layer: 0
   m_Name: PlatSolid (13)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17267,7 +17267,7 @@ Transform:
   m_GameObject: {fileID: 869982292}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 171.2478, y: -5.7257586, z: 0}
-  m_LocalScale: {x: 15, y: 1, z: 1}
+  m_LocalScale: {x: 24.5625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608214002}
   m_RootOrder: 129
@@ -19379,7 +19379,7 @@ GameObject:
   - component: {fileID: 979918331}
   m_Layer: 0
   m_Name: PlatSolid (6)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21476,7 +21476,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4572341480107096, guid: 76076dd3f3a7f7a4f98f233df92fcc8a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 4572341480107096, guid: 76076dd3f3a7f7a4f98f233df92fcc8a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -22535,7 +22535,7 @@ GameObject:
   - component: {fileID: 1138170591}
   m_Layer: 0
   m_Name: PlatSolid (14)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26138,7 +26138,7 @@ GameObject:
   - component: {fileID: 1274819680}
   m_Layer: 0
   m_Name: PlatSolid (10)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27435,7 +27435,7 @@ GameObject:
   - component: {fileID: 1335114377}
   m_Layer: 0
   m_Name: PlatSolid (9)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29085,7 +29085,7 @@ GameObject:
   - component: {fileID: 1413879859}
   m_Layer: 0
   m_Name: PlatSolid (5)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31435,7 +31435,7 @@ GameObject:
   - component: {fileID: 1534886398}
   m_Layer: 0
   m_Name: PlatSolid (15)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33202,7 +33202,7 @@ GameObject:
   - component: {fileID: 1591233495}
   m_Layer: 0
   m_Name: PlatSolid (20)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39948,7 +39948,7 @@ Transform:
   m_GameObject: {fileID: 1947772175}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 163.2478, y: -5.7257586, z: 0}
-  m_LocalScale: {x: 15, y: 1, z: 1}
+  m_LocalScale: {x: 26.7375, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608214002}
   m_RootOrder: 128
@@ -41188,7 +41188,7 @@ Transform:
   m_GameObject: {fileID: 1991609065}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 155.2478, y: -5.7257586, z: 0}
-  m_LocalScale: {x: 15, y: 1, z: 1}
+  m_LocalScale: {x: 25.523438, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608214002}
   m_RootOrder: 127
@@ -41688,7 +41688,7 @@ GameObject:
   - component: {fileID: 2053360226}
   m_Layer: 0
   m_Name: PlatSolid (4)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
