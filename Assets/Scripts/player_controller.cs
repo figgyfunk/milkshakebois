@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class player_controller : MonoBehaviour {
+public class player_controller : MonoBehaviour
+{
 
     public float speed = 1f;
     public float jumpheight = 10f;
+    private bool isGrounded = true;
     public Sprite main_cube;
     public Sprite outline;
     public GameObject spriteObject;
@@ -26,32 +28,38 @@ public class player_controller : MonoBehaviour {
     private bool incorporeal = false;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         currImage = spriteObject.GetComponent<SpriteRenderer>();
         GameObject tempObject = GameObject.Find("Score");
-        if(tempObject != null)
+        if (tempObject != null)
         {
             scoreText = tempObject.GetComponent<Text>();
         }
 
         source = GetComponent<AudioSource>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if(Input.GetKey("left")) {
-            m_Rigidbody.velocity = -transform.right * speed + new Vector3(0,m_Rigidbody.velocity.y,0);
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey("left"))
+        {
+            m_Rigidbody.velocity = -transform.right * speed + new Vector3(0, m_Rigidbody.velocity.y, 0);
         }
-        if(Input.GetKey("right")) {
+        if (Input.GetKey("right"))
+        {
             m_Rigidbody.velocity = transform.right * speed + new Vector3(0, m_Rigidbody.velocity.y, 0);
         }
-        if(Input.GetKeyDown("up") && m_Rigidbody.velocity.y == 0){
+        if (Input.GetKeyDown("up") && isGrounded == true)
+        {
             m_Rigidbody.velocity = transform.up * jumpheight;
 
             source.PlayOneShot(jump_sound, vol);
+            isGrounded = false;
         }
-        if(!Input.GetKey("left") && !Input.GetKey("right") && !Input.GetKey("up"))
+        if (!Input.GetKey("left") && !Input.GetKey("right") && !Input.GetKey("up"))
         {
             m_Rigidbody.velocity = new Vector3(0, m_Rigidbody.velocity.y, 0);
         }
@@ -97,6 +105,7 @@ public class player_controller : MonoBehaviour {
         {
 
             source.PlayOneShot(land_sound, vol);
+            isGrounded = true;
         }
     }
 
@@ -120,7 +129,7 @@ public class player_controller : MonoBehaviour {
             score++;
             scoreText.text = score.ToString();
             Destroy(collision.gameObject);
-            
+
             source.PlayOneShot(grab_sound, vol);
         }
     }

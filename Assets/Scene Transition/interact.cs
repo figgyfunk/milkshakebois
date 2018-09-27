@@ -41,7 +41,7 @@ public class interact : MonoBehaviour {
         if(active)
         {
             GUI.enabled = true;
-            GUI.Label(new Rect(400f, 30f, 300, 100), printText);
+            GUI.Label(new Rect(Screen.width / 2.25f, Screen.height / 4, 300, 100), printText);
          
         }
         

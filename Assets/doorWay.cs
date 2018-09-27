@@ -18,7 +18,7 @@ public class doorWay : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other)
     {
         active = true;
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         Debug.Log(player.gameObject.name);
         box.GetComponent<MeshRenderer>().enabled = true;
     }
@@ -26,14 +26,14 @@ public class doorWay : MonoBehaviour {
     private void OnTriggerExit2D(Collider2D other)
     {
         active = false;
-        player = null;
+        //player = null;
         box.GetComponent<MeshRenderer>().enabled = false;
     }
     private void OnGUI()
     {
         if (active)
         {
-            GUI.Label(new Rect(400f, 100f, 300, 100), doorText);
+            GUI.Label(new Rect(Screen.width / 2.25f , Screen.height / 4, 300, 100), doorText);
    
         }
     }
@@ -42,6 +42,7 @@ public class doorWay : MonoBehaviour {
         fade.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 0f);
         box.GetComponent<MeshRenderer>().enabled = false;
 
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
    
